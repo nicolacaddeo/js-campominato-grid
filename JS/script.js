@@ -18,13 +18,21 @@ gridBtn.addEventListener('click',
         gridContainer.innerHTML = '';
 
         // ciclo per creare la griglia
-        for (i = 1; i <= 100; i++) {
+        for (let i = 1; i <= 100; i++) {
             const cell = document.createElement('div');
             cell.className = 'cell';
             cell.innerHTML = i;
             gridContainer.append(cell);
+
+            // console.log del numero
+            cell.addEventListener('click',
+                function () {
+                    console.log(`Hai cliccato la cella ${i}`);
+                }
+            );
         }
     }
 );
+
 
 
