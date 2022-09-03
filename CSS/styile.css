@@ -25,16 +25,20 @@ header {
 
 .container {
     max-width: 1200px;
-    padding-top: 10vh;
+    padding-top: 15vh;
     margin: 0 auto;
 }
 
-.grid {
+#grid {
     display: flex;
     flex-wrap: wrap;
 }
 
-.card {
+.cell {
     width: calc(100% / 10);
+    height: 100px;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
