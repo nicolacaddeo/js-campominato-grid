@@ -15,6 +15,7 @@ body {
 /**************
     //GENERALS
 ***************/
+/******** Generals style ********/
 header {
     height: 10vh;
     position: fixed;
@@ -34,6 +35,9 @@ header {
     flex-wrap: wrap;
 }
 
+/******** //Generals style ********/
+
+/******* Cells style *******/
 .cell {
     width: calc(100% / 10);
     height: 100px;
@@ -41,6 +45,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .lightblue {
@@ -50,3 +55,5 @@ header {
 .green {
     background-color: #33cc33;
 }
+
+/******* //Cells style *******/
