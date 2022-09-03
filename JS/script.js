@@ -28,6 +28,13 @@ gridBtn.addEventListener('click',
             cell.addEventListener('click',
                 function () {
                     console.log(`Hai cliccato la cella ${i}`);
+
+                    // condizione per pari o dispari
+                    if (i % 2 === 0) {
+                        cell.classList.add('lightblue');
+                    } else {
+                        cell.classList.add('green');
+                    }
                 }
             );
         }
